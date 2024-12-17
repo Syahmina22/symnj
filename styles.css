@@ -1,0 +1,295 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetic, sans-serif;
+  line-height: 1.6;
+  color: #333; /* Dark grey for text */
+  background-color: #fdfcf8; /* Soft beige background */
+}
+
+/* Header Styling */
+header {
+  background-color: #f8e1db; /* Light blush pink */
+  color: #5a5a5a;
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 2px solid #e8d9d1; /* Subtle bottom border */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #5a5a5a;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+   color: #d49595;
+  background-color: rgba(211, 149, 149, 0.2);
+  border-radius: 4px;
+}
+
+
+/*header end */ 
+
+/* Main Content */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+
+
+h1 {
+  font-size: 2.5rem;
+  color: #8b5e3c; /* Warm brown for headings */
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #5a5a5a;
+  margin-bottom: 1.5rem;
+}
+
+/*end main content */
+
+
+main {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+
+button {
+  background-color: #d49595; /* Soft pink button */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #8b5e3c; /* Warm brown */
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  background-color: #f8e1db; /* Light blush pink */
+  padding: 1rem 0;
+  color: #5a5a5a;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+/* Background Animation Container */
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Individual Animated Elements */
+.background-animation span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #d49595; /* Soft pink */
+  opacity: 0.7;
+  border-radius: 50%;
+  animation: float 10s infinite ease-in-out;
+}
+
+.background-animation span:nth-child(1) {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.background-animation span:nth-child(2) {
+  top: 40%;
+  left: 60%;
+  animation-delay: 2s;
+}
+
+.background-animation span:nth-child(3) {
+  top: 70%;
+  left: 10%;
+  animation-delay: 4s;
+}
+
+.background-animation span:nth-child(4) {
+  top: 50%;
+  left: 80%;
+  animation-delay: 6s;
+}
+
+/* Float Animation Keyframes */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+/* Styling for Timetable */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 40px;
+  margin-top: 40px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* my portfolio */
+
+.timeline-content {
+  background-color: #f8e1db;  /* Light blush pink */
+  padding: 15px;
+  border-radius: 15px;  /* Rounded corners for content box */
+  width: calc(100% - 40px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Subtle shadow */
+  text-align: left;
+}
+
+
+
+.timeline-item h3 {
+  color: #8b5e3c;  /* Warm brown for time */
+}
+
+.timeline-item p {
+  margin: 5px 0;
+  color: #5a5a5a;  /* Dark grey text color */
+}
+
+.timeline-content:hover {
+  background-color: #e0c3c1;  /* Slightly darker pink on hover */
+  transition: background-color 0.3s ease;
+}
+ /*end portfolio */ 
+
+/*test*/
+
+   .rounded-box {
+                background-color: #f8e1db;  /* Light pink background */
+                border-radius: 15px;         /* Rounded corners */
+                padding: 1rem;               /* Padding inside the box */
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Subtle shadow */
+                text-align: center;           /* Center text */
+            }
+
+            .rounded-box:hover {
+                background-color: #FFB6C1;  /* Light grey background on hover */
+                transition: background-color 0.3s ease;  /* Smooth transition effect */
+            }
+
+
+
+
+
+
+
+
+
+/* Styling for Skills Section */
+.skills {
+  text-align: center;
+    font-size: 34px; /* Adjusted larger heading size */
+    color: #333;
+    margin-bottom: 20px;
+     font-family: 'Arial',Helvetic, sans-serif; /* Heading font */
+    font-weight: normal
+
+}
+
+.circle-box {
+    display: inline-flex;  /* Use inline-flex to align items next to each other */
+    align-items: center;
+    justify-content: center;
+    width: 120px; /* Adjust width */
+    height: 120px; /* Adjust height */
+    background-color: #FFE4E1; /* MistyRose background color */
+    border-radius: 50%; /* Making the box circular */
+    font-size: 12px; /* Adjust font size */
+    color: #333;
+    text-align: center;
+    margin: 10px; /* Adjust spacing between circles */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.circle-box p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold; /* Optional: Make the text bold for emphasis */
+}
+
+.circle-box:hover {
+  background-color: #d49595;  /* Slight pink hover effect */
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* end skill styple*/
+
+/* TITLE */
+
+ @keyframes moveRight {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+                }
+                to {
+            transform: translateX(100%);
+                    opacity: 1;
+                }
+            }
+
+            h1 {
+                display: inline-block;
+                white-space: nowrap;  /* Ensure content doesn't wrap */
+                animation: moveRight 6s infinite linear;  /* 5 seconds for one full cycle */
+                }
+
